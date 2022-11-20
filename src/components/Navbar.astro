@@ -1,0 +1,283 @@
+<header class="app-bar">
+  <div class="app-bar__brand">
+    <img
+      class="primary__eo"
+      src="../eventorganizer/4thncafa.png"
+      alt="4th NCAFA Trilogi 2023"
+    />
+    <div class="secondary__eo">
+      <a
+        href="https://trilogi.ac.id/universitas/program-studi-akuntansi/"
+        target="_blank"
+      >
+        <img
+          class="__brand_2"
+          src="../eventorganizer/prodiakuntansi.png"
+          alt="Program Studi Akuntansi"
+        />
+      </a>
+      <a href="https://iaijakarta.or.id/newjktweb/" target="_blank">
+        <img
+          class="__brand_2"
+          src="../eventorganizer/iaidkijakarta.png"
+          alt="IAI DKI Jakarta"
+        />
+      </a>
+      <a href="https://www.apsae.or.id/" target="_blank">
+        <img class="__brand_2" src="../eventorganizer/apsae.png" alt="APSAE" />
+      </a>
+      <a href="https://acfe-indonesia.or.id/" target="_blank">
+        <img
+          class="__brand_2"
+          src="../eventorganizer/acfe-indonesia.jpg"
+          alt="ACFE Indonesia"
+        />
+      </a>
+    </div>
+  </div>
+  <div class="app-bar__menu">
+    <button onclick="openSideNav()" class="hamburgerButton" id="hamburgerButton">☰</button>
+  </div>
+  <nav id="navigationDrawer" class="app-bar__navigation">
+    <ul id="navigationButton">
+      <li><a id="nav-link" class="nav-link active" href="/">BERANDA</a></li>
+      <li><a id="nav-link" class="nav-link" href="/seminar">SEMINAR</a></li>
+      <li><a id="nav-link" class="nav-link" href="/paper"><i>PAPER</i></a></li>
+      <li>
+        <a id="nav-link" class="nav-link" href="/mitrajurnal">MITRA JURNAL</a>
+      </li>
+      <li>
+        <a id="nav-link" class="nav-link" href="/cohost"><i>CO-HOST</i></a>
+      </li>
+      <li>
+        <a id="nav-link" class="nav-link" href="/committee"><i>COMMITTEE</i></a>
+      </li>
+      <li>
+        <a id="nav-link" class="nav-link" href="/partners"
+          ><i>SPONSORS & MEDIA PARTNERS</i>
+        </a>
+      </li>
+      <li>
+        <a id="nav-link" class="nav-link" href="/contact">HUBUNGI KAMI</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  function openSideNav() {
+    var cekson = document.getElementById('#navigationDrawer')
+    cekson.classList.add('open');
+  }
+  </script>
+
+<style>
+  .app-bar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #feba12, #078193);
+  }
+
+  .app-bar .app-bar__menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  .app-bar .app-bar__brand {
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
+    align-content: center;
+    direction: rtl;
+    margin: auto;
+    padding: 8px 16px;
+    gap: 0 20px;
+    background-color: white;
+    z-index: 99;
+  }
+
+  .app-bar .app-bar__brand .primary__eo {
+    margin: auto;
+    width: 320px;
+  }
+
+  .app-bar .app-bar__brand .secondary__eo {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: auto;
+    gap: 20px;
+    direction: ltr;
+  }
+
+  .app-bar .app-bar__brand .secondary__eo .__brand_2 {
+    max-height: 60px;
+  }
+
+  .app-bar .app-bar__navigation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -250%;
+    width: 100%;
+    transition: all 1s;
+    background-image: linear-gradient(to right, #078193 20%, #2e4696 90%);
+    overflow: hidden;
+    padding: 16px 0px;
+    z-index: -999;
+  }
+
+  .app-bar .app-bar__navigation.open {
+    top: 118px;
+    transition: 0.5s all;
+  }
+
+  .app-bar .app-bar__navigation ul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .app-bar .app-bar__navigation ul li::marker {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    width: 100%;
+
+    position: relative;
+  }
+
+  .app-bar .app-bar__navigation ul li a:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .app-bar .app-bar__brand .secondary__eo {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      margin: auto;
+      gap: 20px;
+      direction: ltr;
+      place-items: center;
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    .app-bar {
+      grid-template-columns: 1fr auto;
+    }
+
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+      width: 120px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .app-bar .app-bar__brand .secondary__eo {
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(2, auto);
+      margin: auto;
+      gap: 15px;
+      direction: ltr;
+      grid-auto-flow: row;
+      place-items: center;
+    }
+
+    .app-bar .app-bar__navigation ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 2em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      width: 100%;
+    }
+
+    .app-bar .app-bar__brand .primary__eo {
+      margin: auto;
+      width: 180px;
+    }
+
+    .app-bar .app-bar__brand .secondary__eo {
+      margin: auto;
+      gap: 5px;
+    }
+
+    .app-bar .app-bar__brand .secondary__eo .__brand_2 {
+      max-height: 30px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .app-bar .app-bar__brand {
+      gap: 10px;
+      padding: 8px;
+    }
+
+    .app-bar .app-bar__brand .primary__eo {
+      margin: auto;
+      width: 120px;
+    }
+
+    .app-bar .app-bar__brand .secondary__eo {
+      margin: auto;
+      gap: 5px;
+    }
+
+    .app-bar .app-bar__brand .secondary__eo .__brand_2 {
+      max-height: 25px;
+    }
+  }
+</style>

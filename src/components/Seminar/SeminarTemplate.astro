@@ -1,0 +1,19 @@
+---
+export interface Props {
+  namaNS: string;
+  jabatanNS: string;
+  href: string;
+}
+
+const { namaNS, jabatanNS, href } = Astro.props;
+---
+
+<div class="day">
+  <p class="page__text links-smr">
+    <a href={href} target="_blank">{namaNS}</a>
+  </p>
+  <p class="page__text">{jabatanNS}</p>
+</div>
+<div class="day">
+  <p class="page__text links-smr">*) Dalam Konfirmasi</p>
+</div>

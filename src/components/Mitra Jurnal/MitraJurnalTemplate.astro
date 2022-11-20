@@ -1,0 +1,22 @@
+---
+export interface Props {
+  namaMJ: string;
+  indexMJ: string;
+  href: string;
+  src: string;
+}
+
+const { namaMJ, indexMJ, href, src } = Astro.props;
+---
+
+<div class="mitrajurnal__brand">
+  <img
+    loading="lazy"
+    src={src}
+    alt={namaMJ}
+    class="mitrajurnal__logo lazyload"
+  />
+  <a href={href} target="_blank" rel="noopener">
+    <p class="mitrajurnal__name page__text">"{namaMJ}"</p>
+  </a>
+</div>

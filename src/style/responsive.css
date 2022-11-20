@@ -1,0 +1,125 @@
+@media screen and (max-width:1024px) {
+    .app-bar .app-bar__brand .secondary__eo {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        margin: auto;
+        gap: 20px;
+        direction: ltr;
+        place-items: center;
+    }
+}
+
+@media screen and (min-width: 650px) {
+
+    .app-bar {
+        grid-template-columns: 1fr auto;
+    }
+
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .homepage__jumbotron {
+        width: 100%;
+        height: 60vh;
+        margin: auto;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .app-bar .app-bar__brand .secondary__eo {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, auto);
+        margin: auto;
+        gap: 15px;
+        direction: ltr;
+        grid-auto-flow: row;
+        place-items: center;
+    }
+
+    .app-bar .app-bar__navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+
+    .app-bar .app-bar__brand .primary__eo {
+        margin: auto;
+        width: 180px;
+    }
+
+    .app-bar .app-bar__brand .secondary__eo {
+        margin: auto;
+        gap: 5px;
+    }
+
+    .app-bar .app-bar__brand .secondary__eo .__brand_2 {
+        max-height: 30px;
+    }
+
+    .homepage__jumbotron {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+
+
+    .app-bar .app-bar__brand {
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .app-bar .app-bar__brand .primary__eo {
+        margin: auto;
+        width: 120px;
+    }
+
+    .app-bar .app-bar__brand .secondary__eo {
+        margin: auto;
+        gap: 5px;
+    }
+
+
+    .app-bar .app-bar__brand .secondary__eo .__brand_2 {
+        max-height: 25px;
+    }
+
+    .homepage__jumbotron {
+        height: 20vh;
+    }
+}
