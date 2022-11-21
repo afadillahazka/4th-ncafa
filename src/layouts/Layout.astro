@@ -1,32 +1,41 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
-import Footer from '../components/Footer.astro';
-import Navbar from '../components/Navbar.astro';
-import '../style/style.css'
-import '../style/responsive.css'
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import "../style/style.css";
+import "../style/responsive.css";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#47A2C6" />
+    <meta
+      name="description"
+      content="National Conference on Accounting & Fraud Auditing (NCAFA) merupakan sebuah konferensi tingkat nasional di bidang akuntansi dan audit yang memiliki rangkaian kegiatan Call for Paper dan Seminar."
+    />
 
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#47A2C6" />
-		<meta name="description" content="National Conference on Accounting & Fraud Auditing (NCAFA) merupakan sebuah konferensi tingkat nasional di bidang akuntansi dan audit yang memiliki rangkaian kegiatan Call for Paper dan Seminar.">
-
-		
-		<link rel="icon" type="image/svg+xml" href="../logo/4thncafa_logo-01.webp" />
-		<title>{title} - 4th NCAFA Trilogi</title>
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-	</body>
-	<Footer />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../logo/4thncafa_logo-01.webp"
+    />
+    <title>{title} - 4th NCAFA Trilogi</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <script>
+      import '../script/menu.js';
+      import '../script/active.js';
+    </script>
+  </body>
+  <Footer />
 </html>

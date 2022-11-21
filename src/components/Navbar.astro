@@ -36,24 +36,24 @@
     </div>
   </div>
   <div class="app-bar__menu">
-    <button onclick="openSideNav()" class="hamburgerButton" id="hamburgerButton">☰</button>
+    <button class="hamburgerButton" id="hamburgerButton">☰</button>
   </div>
   <nav id="navigationDrawer" class="app-bar__navigation">
     <ul id="navigationButton">
-      <li><a id="nav-link" class="nav-link active" href="/">BERANDA</a></li>
-      <li><a id="nav-link" class="nav-link" href="/seminar">SEMINAR</a></li>
-      <li><a id="nav-link" class="nav-link" href="/paper"><i>PAPER</i></a></li>
+      <li><a id="nav-link" class="nav-links" href="/">BERANDA</a></li>
+      <li><a id="nav-link" class="nav-links" href="/seminar">SEMINAR</a></li>
+      <li><a id="nav-link" class="nav-links" href="/paper"><i>PAPER</i></a></li>
       <li>
-        <a id="nav-link" class="nav-link" href="/mitrajurnal">MITRA JURNAL</a>
+        <a id="nav-link" class="nav-links" href="/mitrajurnal">MITRA JURNAL</a>
       </li>
       <li>
-        <a id="nav-link" class="nav-link" href="/cohost"><i>CO-HOST</i></a>
+        <a id="nav-link" class="nav-links" href="/cohost"><i>CO-HOST</i></a>
       </li>
       <li>
-        <a id="nav-link" class="nav-link" href="/committee"><i>COMMITTEE</i></a>
+        <a id="nav-link" class="nav-links" href="/committee"><i>COMMITTEE</i></a>
       </li>
       <li>
-        <a id="nav-link" class="nav-link" href="/partners"
+        <a id="nav-link" class="nav-links" href="/partners"
           ><i>SPONSORS & MEDIA PARTNERS</i>
         </a>
       </li>
@@ -63,13 +63,6 @@
     </ul>
   </nav>
 </header>
-
-<script>
-  function openSideNav() {
-    var cekson = document.getElementById('#navigationDrawer')
-    cekson.classList.add('open');
-  }
-  </script>
 
 <style>
   .app-bar {
