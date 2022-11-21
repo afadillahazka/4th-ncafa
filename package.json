@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "astro": "^1.6.10"
+  },
+  "devDependencies": {
+    "astro-webmanifest": "^0.4.2"
   }
 }
