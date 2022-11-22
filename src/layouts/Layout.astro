@@ -23,6 +23,19 @@ import "../style/responsive.css";
       content="National Conference on Accounting & Fraud Auditing (NCAFA) merupakan sebuah konferensi tingkat nasional di bidang akuntansi dan audit yang memiliki rangkaian kegiatan Call for Paper dan Seminar."
     />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0M8Q86CBNK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0M8Q86CBNK");
+    </script>
+
     <link
       rel="icon"
       type="image/svg+xml"
@@ -36,7 +49,6 @@ import "../style/responsive.css";
     <script>
       import "../script/menu.js";
       import "../script/active.js";
-      import '../script/gtag.astro'
     </script>
   </body>
   <Footer />
