@@ -1,8 +1,10 @@
 # build output
 .output/
+.vscode/
 
 # dependencies
 node_modules/
+dist/
 
 # logs
 npm-debug.log*

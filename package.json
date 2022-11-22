@@ -12,7 +12,13 @@
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.1.1",
-    "astro": "^1.6.10"
+    "@astrojs/react": "^1.2.2",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "astro": "^1.6.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-spinners": "^0.13.6"
   },
   "devDependencies": {
     "astro-webmanifest": "^0.4.2"
