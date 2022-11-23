@@ -300,6 +300,11 @@ MAIN
     margin: auto;
 }
 
+.mitrajurnal__brand a {
+    color: #2E4696;
+    text-decoration: underline;
+}
+
 .mitrajurnal__name {
     display: flex;
     width: 95%;
