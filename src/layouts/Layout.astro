@@ -6,6 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+import Loader from "../components/Loader.astro";
 
 import Gtag from "../script/gtag.astro";
 
@@ -37,6 +38,7 @@ import "../style/responsive.css";
   </head>
   <body>
     <Navbar />
+    <Loader />
     <slot />
     <script>
       import "../script/menu.js";
