@@ -1,6 +1,15 @@
-<div class="loader">
-    <img src="/loaderncafa.gif" alt="Loading...">
-</div>
+
+
+<body>
+    <div class="loader">
+        <img src="../logo/icons/maskable_icon_x384.png" alt="">
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+        document.querySelector('.loader').classList.toggle('fadeout')
+    });
+    </script>
+</body>
 
 <style media="screen">
     .loader {
@@ -15,14 +24,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        animation: fadeIn 1s;
     }
 
     .loader > img {
-        width: 50%;
+        width: 20%;
     }
 
-    .loader.hidden {
-        animation: fadeOut 1s;
+    .loader.fadeout {
+        animation: fadeOut 2s;
         animation-fill-mode: forwards;
     }
 
@@ -32,10 +43,11 @@
             visibility: hidden;
         }
     }
-</style>
 
-<script>
-    window.addEventListener('load', () => {
-    document.querySelector('.loader').classList.toggle('hidden')
-});
-</script>
+    @keyframes fadeIn {
+        100% {
+            opacity: 1;
+            visibility: hidden;
+        }
+    }
+</style>
