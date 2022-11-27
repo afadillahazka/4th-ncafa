@@ -78,7 +78,7 @@ main {
     background: url('../jumbotron/Background-05.png') no-repeat center top fixed;
     background-size: cover;
     background-position: calc(center - 20%);
-    min-height: 90vh;
+    min-height: 80vh;
     overflow: hidden;
     padding: 2vh auto;
 }
@@ -388,8 +388,14 @@ MAIN
     width: 10%;
 }
 
-.sponsor__logo {
+.sponsor__logo.large {
+    width: 30%;
+}
+.sponsor__logo.medium {
     width: 25%;
+}
+.sponsor__logo.small {
+    width: 20%;
 }
 
 .mediapartner__logo.round {
@@ -407,11 +413,17 @@ MAIN
     }
 
     .mediapartner__logo {
-        width: 20%;
+        width: 10%;
     }
 
-    .sponsor__logo {
-        width: 60%;
+    .sponsor__logo.large {
+        width: 30%;
+    }
+    .sponsor__logo.medium {
+        width: 25%;
+    }
+    .sponsor__logo.small {
+        width: 20%;
     }
 
     .mediapartner__brand a {
