@@ -223,6 +223,8 @@ MAIN
 .about {
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 50px;
 }
 
 .about__description {
