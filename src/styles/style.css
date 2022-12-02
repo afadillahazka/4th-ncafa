@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Montserrat:wght@300;400;700;800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bg-ncafa,
+.btn-ncafa {
+    background-image: linear-gradient(to right, #078193 20%, #2E4696 90%);
+}
+
+/* .bg-ncafa2 {
+    background: conic-gradient(from 90deg at 125% 20%, #f7a224, rgba(255, 255, 255, 1), rgba(255,255,255,1))
+} */
+
+.top-gradient {
+    background: linear-gradient(180deg, #ffffff, #fdecd3, rgba(255, 255, 255, 1));
+    min-height: 80vh;
+    margin: 0;
+
+}
+
+.bottom-gradient {
+    background: linear-gradient(90deg, #ffffff, #fdecd3, #fbd9a7)
+}
+
+.active {
+    border: none;
+    outline: none;
+    padding: 8px 12px !important;
+    background-color: #f7a224 !important;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.nav-item {
+    padding: 5px 10px !important;
+}

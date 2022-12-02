@@ -1,0 +1,91 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+import Footer from "../components/Footer.astro";
+import NavigationBar from "../components/NavigationBar.astro";
+import Scrolltotop from "../components/Scrolltotop.astro";
+import Loader from "../components/Loader.astro";
+
+import Gtag from "../script/Gtag.astro";
+
+import "../styles/style.css";
+---
+
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#47A2C6" />
+    <meta
+      name="google-site-verification"
+      content="i_EDZW9Fii_-OtvUS7Yqknu_MgKiWw1atli-cLFG6R8"
+    />
+    <meta
+      name="description"
+      content="National Conference on Accounting & Fraud Auditing (NCAFA) merupakan sebuah konferensi tingkat nasional di bidang akuntansi dan audit yang memiliki rangkaian kegiatan Call for Paper dan Seminar."
+    />
+    <Gtag />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../logo/4thncafa_logo-01.webp"
+    />
+    <!-- CSS only -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>{title} - 4th NCAFA Trilogi</title>
+  </head>
+  <body>
+    <NavigationBar />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <Scrolltotop />
+    <Loader />
+  </body>
+</html>

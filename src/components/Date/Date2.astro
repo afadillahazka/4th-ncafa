@@ -1,0 +1,14 @@
+---
+export interface props {
+    subtitle: string;
+    date: string;
+    hour: string;
+}
+
+const {subtitle, date, hour} = Astro.props
+---
+<div>
+  <p class="fs-5 m-0 fw-bold">{subtitle}</p>
+  <p class="fs-5 m-0">{date}</p>
+  <p class="fs-5 m-0">{hour}</p>
+</div>

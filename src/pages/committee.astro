@@ -1,12 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import '../style/responsive.css'
-import '../style/style.css'
+import Layout from "../layout/Layout.astro";
 import Committee from "../components/Committee/Committee.astro";
 ---
 
 <Layout title="Committee">
-  <main>
+  <section class="top-gradient">
+    <h1 class="text-center fw-bold text-black pt-4">Committee</h1>
     <Committee />
-  </main>
+  </section>
 </Layout>

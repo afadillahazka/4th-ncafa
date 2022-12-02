@@ -1,0 +1,15 @@
+---
+export interface Props {
+    text: string;
+    href: string;
+}
+
+const {text, href} = Astro.props
+---
+<button type="button" class="btn btn-ncafa rounded-9"
+  ><a
+    class="fs-6 text-white text-decoration-none"
+    href={href}
+    target="_blank">{text}</a
+  >
+</button>

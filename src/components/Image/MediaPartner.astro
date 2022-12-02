@@ -1,0 +1,15 @@
+---
+export interface props {
+  src: string;
+  alt: string;
+  href: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<img
+  class="img-fluid col-2 col-md-1 col-lg-1"
+  src={src}
+  alt={alt}
+/>

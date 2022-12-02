@@ -1,13 +1,98 @@
 ---
-import Seminar from "../components/Seminar/Seminar.astro";
-import Layout from "../layouts/Layout.astro";
-import '../style/responsive.css'
-import '../style/style.css'
-
+import Layout from "../layout/Layout.astro";
+import DateContainer from "../components/Date/DateContainer.astro";
+import Date from "../components/Date/Date.astro";
+import ButtonContainer from "../components/Button/ButtonContainer.astro";
+import Button from "../components/Button/Button.astro";
+import ContactContainer from "../components/ContactOne/ContactContainer.astro";
+import Contact from "../components/ContactOne/Contact.astro";
+import NarasumberContainer from "../components/Image/NarasumberContainer.astro";
+import NarasumberImage from "../components/Image/NarasumberImage.astro";
 ---
 
 <Layout title="Seminar">
-  <main>
-    <Seminar />
-  </main>
+  <section class="top-gradient">
+    <h1 class="text-center fw-bold text-black pt-4">Seminar (7 SKP)</h1>
+    <NarasumberContainer title="Keynote Speech">
+      <NarasumberImage 
+        name="Dr. Hery Subowo S.E., MPM., Ak., CA, CPA, CSFA., CIA, Ak., CFrA, CFE."
+        position="President ACFE Indonesia Chapter periode 2022-2024"
+        src="../narasumber/Dr.Hery.png"
+        href=""
+      />
+    </NarasumberContainer>
+    <NarasumberContainer title="Narasumber">
+      <NarasumberImage 
+      name="Prof. Dr. Sylvia Veronica Siregar, S.E., Ak., CA., CSRS., CSRA."
+      position="Guru Besar Departemen Akuntansi Fakultas Ekonomi & Bisnis Universitas Indonesia"
+        href=""
+        src="../narasumber/Prof.Dr.Sylvia.png"
+      />
+      <NarasumberImage 
+      name="Oluwatoyin Muse Johnson Popoola, JP, Ph.D., MBA., PGDAF., HDipl., RPA., Member INSOL International., AM(M)., CFA., FCTI., FCA."
+      position="International Lecturer (Senior) Tunku Puteri Intan Safinaz School of Accountancy (TISSA-UUM) College of Business, Universiti Utara Malaysia"
+        href=""
+        src="../narasumber/Oluwatoyin.png"
+      />
+      <NarasumberImage 
+      name="Zubir Azhar, PhD., FCPA., CA., ACPA."
+      position="Chairperson (Accounting) - Senior Lecturer, School of Management, Universiti Sains Malaysia"
+        href=""
+        src="../narasumber/ZubirAzhar.png"
+      />
+      <NarasumberImage 
+      name="Dr. Sigid Eko Pramono, S.E.Ak., MIBA., CA."
+      position="Inisiator Pedoman Akuntansi Pesantren - Senior Economist Bank Indonesia 2016-2021"
+        href=""
+        src="../narasumber/Dr.Sigid.png"
+      />
+      <NarasumberImage 
+      name="B. Bawono Kristiaji, S.E., M.S.E., M.Sc., IBT., ADIT."
+      position="Partner of Fiscal Research & Advisory at DDTC"
+        href=""
+        src="../narasumber/B.Bawono.png"
+      />
+      <NarasumberImage 
+      name="Dr. Jamaludin Iskak, M.Si., Ak., CA., CPA., CPI., ASEAN, CPA."
+      position="Managing Partner Jamaludin, Ardi, Sukimto & Rekan (JAS) Public Accountant Firm - Member of Auditrust International"
+        href=""
+        src="../narasumber/Dr.Jamaludin.png"
+      />
+    </NarasumberContainer>
+    <NarasumberContainer title="Moderator">
+      <NarasumberImage 
+        name="Dr. Anies Lastiati, S.E.Ak., MHRM., M.Ed.,St., CA."
+        position="Dosen Program Studi Akuntansi Universitas Trilogi"
+        href=""
+        src="../moderator/Dr.Anies.png"
+      />
+      <NarasumberImage 
+        name="Dr. Nurul Aisyah Rachmawati, S.E., M.S.Ak."
+        position="Dosen Program Studi Akuntansi Universitas Trilogi"
+        href=""
+        src="../moderator/Dr.Nurul.png"
+      />
+    </NarasumberContainer>
+    <DateContainer title="Tanggal Penting">
+      <Date subtitle="Panel Session 1" date="Rabu, 01 Februari 2023" hour="08:00 - 12:00 WIB" />
+      <Date subtitle="Panel Session 2" date="Kamis, 02 Februari 2023" hour="13:00 - 17:00 WIB"/>
+    </DateContainer>
+    <ButtonContainer title="Pendaftaran">
+      <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
+    </ButtonContainer>
+    <ContactContainer title="Hubungi Kami">
+        <Contact 
+            subtitle="WhatsApp"
+            href="https://wa.me/6281288425931"
+            contact="0812 8842 5931 "
+            name="(Zakiah)"
+        />
+        <Contact 
+            subtitle="Email"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa@gmail.com"
+            contact="fourthncafa@gmail.com "
+            name=""
+        />
+    </ContactContainer>
+  </section>
 </Layout>

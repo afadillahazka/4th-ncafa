@@ -1,12 +1,38 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import '../style/style.css'
-import '../style/responsive.css'
-import Home from "../components/Home/Home.astro";
+import Layout from "../layout/Layout.astro";
+import Jumbotron from "../components/Jumbotron.astro";
+import Paragraph from "../components/Home/Paragraph.astro";
+import DateContainer from "../components/Date/DateContainer.astro";
+import Date from "../components/Date/Date.astro";
+import ButtonContainer from "../components/Button/ButtonContainer.astro";
+import Button from "../components/Button/Button.astro";
+import ImageContainer from "../components/Image/ImageContainer.astro";
+import MediumImage from "../components/Image/MediumImage.astro";
 ---
 
-<Layout title="Home">
-  <main>
-    <Home />
-  </main>
+<Layout title="Beranda">
+  <Jumbotron />
+  <section class="top-gradient">
+    <Paragraph />
+    <DateContainer title="Tanggal Pelaksanaan">
+      <Date subtitle="Session 1" date="Rabu, 01 Februari 2023" />
+      <Date subtitle="Session 2" date="Kamis, 02 Februari 2023" />
+    </DateContainer>
+    <ButtonContainer title="Poster">
+      <Button
+        text="Lihat Poster"
+        href="https://drive.google.com/file/d/1Qo64LjMVu1twaki7ENa6k3OtEXW-Vemz/view"
+      />
+      <Button
+        text="Unduh Poster"
+        href="https://drive.google.com/uc?export=download&id=1Qo64LjMVu1twaki7ENa6k3OtEXW-Vemz"
+      />
+    </ButtonContainer>
+    <ImageContainer title="Organized by">
+      <MediumImage
+        src="../eventorganizer/himaksitrilogi.png"
+        alt="HIMAKSI Trilogi"
+      />
+    </ImageContainer>
+  </section>
 </Layout>
