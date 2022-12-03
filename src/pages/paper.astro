@@ -13,38 +13,59 @@ import Benefit from "../components/Benefit.astro";
 
 <Layout title="Paper">
   <section class="top-gradient">
-    <h1 class="text-center fw-bold text-black pt-4 pb-2">Call for Paper dan Seminar (16 SKP)</h1>
+    <h1 class="text-center fw-bold text-black pt-4 pb-2">
+      Call for Paper dan Seminar (16 SKP)
+    </h1>
     <Benefit />
     <DateContainer title="Tanggal Penting">
-      <Date2 subtitle="Batas Pengiriman" date="Kamis, 22 Desember 2022"/>
-      <Date2 subtitle="Pengumuman Diterima" date="Sabtu, 22 Januari 2023"/>
-      <Date2 subtitle="Batas Registrasi & Pembayaran" date="Sabtu, 28 Januari 2023"/>
-      <Date subtitle="Parallel Session 1" date="Rabu, 01 Februari 2023" hour="13:00 - 17:00 WIB" />
-      <Date subtitle="Parallel Session 2" date="Kamis, 02 Februari 2023" hour="09:00 - 12:00 WIB"/>
+      <Date2 subtitle="Batas Pengiriman" date="Kamis, 22 Desember 2022" />
+      <Date2 subtitle="Pengumuman Diterima" date="Sabtu, 22 Januari 2023" />
+      <Date2
+        subtitle="Batas Registrasi & Pembayaran"
+        date="Sabtu, 28 Januari 2023"
+      />
+      <Date
+        subtitle="Parallel Session 1"
+        date="Rabu, 01 Februari 2023"
+        hour="13:00 - 17:00 WIB"
+      />
+      <Date
+        subtitle="Parallel Session 2"
+        date="Kamis, 02 Februari 2023"
+        hour="09:00 - 12:00 WIB"
+      />
     </DateContainer>
-    <ButtonContainer title="Template">
-      <Button text="Unduh Template Abstrak" href="https://drive.google.com/uc?export=download&id=1K46fyvhRiPo2j4D_qfO_5ennl_UyRP4V" />
-      <Button text="Unduh Template Full Paper" href="https://drive.google.com/uc?export=download&id=190w8fb95Z2Gah0Umrzb4skBW3VPlkwtz" />
-    </ButtonContainer>
-    <ButtonContainer title="Pendaftaran">
-      <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
-    </ButtonContainer>
-    <ButtonContainer title="Paper Submission">
-      <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_SubmitPaper" />
-    </ButtonContainer>
-    <ContactContainer title="Hubungi Kami">
-        <Contact 
-            subtitle="WhatsApp"
-            href="https://wa.me/6281770002243"
-            contact="0817 7000 2243 "
-            name="(Alda)"
-        />
-        <Contact 
-            subtitle="Email"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa.paper@gmail.com"
-            contact="fourthncaf.paper@gmail.com "
-            name=""
-        />
-    </ContactContainer>
   </section>
+  <aside class="bg-image-ncafa">
+  <ButtonContainer title="Template">
+    <Button
+      text="Unduh Template Abstrak"
+      href="https://drive.google.com/uc?export=download&id=1K46fyvhRiPo2j4D_qfO_5ennl_UyRP4V"
+    />
+    <Button
+      text="Unduh Template Full Paper"
+      href="https://drive.google.com/uc?export=download&id=190w8fb95Z2Gah0Umrzb4skBW3VPlkwtz"
+    />
+  </ButtonContainer>
+  <ButtonContainer title="Pendaftaran">
+    <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
+  </ButtonContainer>
+  <ButtonContainer title="Paper Submission">
+    <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_SubmitPaper" />
+  </ButtonContainer>
+    <ContactContainer title="Hubungi Kami">
+      <Contact
+        subtitle="WhatsApp"
+        href="https://wa.me/6281770002243"
+        contact="0817 7000 2243 "
+        name="(Alda)"
+      />
+      <Contact
+        subtitle="Email"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa.paper@gmail.com"
+        contact="fourthncaf.paper@gmail.com "
+        name=""
+      />
+    </ContactContainer>
+  </aside>
 </Layout>

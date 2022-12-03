@@ -21,7 +21,7 @@
     background: linear-gradient(180deg, #ffffff, #fdecd3, rgba(255, 255, 255, 1));
     min-height: 80vh;
     margin: 0;
-
+    
 }
 
 .bottom-gradient {
@@ -39,4 +39,13 @@
 
 .nav-item {
     padding: 5px 10px !important;
+}
+
+.bg-image-ncafa {
+    background: url('../jumbotron/Background-05-01.png') no-repeat center center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;;
+    min-height: 60vh;
 }
