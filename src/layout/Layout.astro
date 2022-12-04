@@ -10,7 +10,6 @@ import NavigationBar from "../components/NavigationBar.astro";
 import Scrolltotop from "../components/Scrolltotop.astro";
 import Loader from "../components/Loader.astro";
 
-
 import "../styles/style.css";
 ---
 
@@ -29,14 +28,17 @@ import "../styles/style.css";
       name="description"
       content="National Conference on Accounting & Fraud Auditing (NCAFA) merupakan sebuah konferensi tingkat nasional di bidang akuntansi dan audit yang memiliki rangkaian kegiatan Call for Paper dan Seminar."
     />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0M8Q86CBNK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0M8Q86CBNK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-0M8Q86CBNK');
-</script>
+      gtag("config", "G-0M8Q86CBNK");
+    </script>
 
     <link
       rel="icon"
@@ -57,7 +59,10 @@ import "../styles/style.css";
     ></script>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -74,6 +79,15 @@ import "../styles/style.css";
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
     ></script>
 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+
     <title>{title} - 4th NCAFA Trilogi</title>
   </head>
   <body>
@@ -84,5 +98,19 @@ import "../styles/style.css";
     <Footer />
     <Scrolltotop />
     <Loader />
+    <script
+      type="text/javascript"
+      src="node_modules/mdbootstrap/js/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="node_modules/mdbootstrap/js/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="node_modules/mdbootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"
+    ></script>
   </body>
 </html>
