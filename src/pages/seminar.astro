@@ -8,6 +8,8 @@ import ContactContainer from "../components/ContactOne/ContactContainer.astro";
 import Contact from "../components/ContactOne/Contact.astro";
 import NarasumberContainer from "../components/Image/NarasumberContainer.astro";
 import NarasumberImage from "../components/Image/NarasumberImage.astro";
+import DateCardContainer from "../components/Date/DateCardContainer.astro";
+import DateCard from "../components/Date/DateCard.astro";
 ---
 
 <Layout title="Seminar">
@@ -18,44 +20,44 @@ import NarasumberImage from "../components/Image/NarasumberImage.astro";
         name="Dr. Hery Subowo S.E., MPM., Ak., CA, CPA, CSFA., CIA., Ak., CFrA., CFE."
         position="President ACFE Indonesia Chapter periode 2022-2024"
         src="../narasumber/Dr.Hery.png"
-        href=""
+        href="https://jateng.bpk.go.id/pimpinan-perwakilan/"
       />
     </NarasumberContainer>
     <NarasumberContainer title="Narasumber">
       <NarasumberImage
         name="Prof. Dr. Sylvia Veronica Siregar, S.E., Ak., CA., CSRS., CSRA."
         position="Guru Besar Departemen Akuntansi Fakultas Ekonomi & Bisnis Universitas Indonesia"
-        href=""
+        href="https://www.linkedin.com/in/sylvia-veronica-siregar-3598948a/"
         src="../narasumber/Prof.Dr.Sylvia.png"
       />
       <NarasumberImage
         name="Oluwatoyin Muse Johnson Popoola, JP, Ph.D., MBA., PGDAF., HDipl., RPA., Member INSOL International., AM(M)., CFA., FCTI., FCA."
         position="International Lecturer (Senior) Tunku Puteri Intan Safinaz School of Accountancy (TISSA-UUM) College of Business, Universiti Utara Malaysia"
-        href=""
+        href="http://repo.uum.edu.my/profile/popoola"
         src="../narasumber/Oluwatoyin.png"
       />
       <NarasumberImage
         name="Zubir Azhar, Ph.D., FCPA., CA., ACPA."
         position="Chairperson (Accounting) - Senior Lecturer, School of Management, Universiti Sains Malaysia"
-        href=""
+        href="https://mia.org.my/governance/about-the-council/dr-zubir-azhar/"
         src="../narasumber/ZubirAzhar.png"
       />
       <NarasumberImage
         name="Dr. Sigid Eko Pramono, S.E.Ak., MIBA., CA."
         position="Inisiator Pedoman Akuntansi Pesantren - Senior Economist Bank Indonesia 2016-2021"
-        href=""
+        href="https://tazkia.ac.id/dosen/dr-sigid-eko-pramono-s-e-ak-miba/"
         src="../narasumber/Dr.Sigid.png"
       />
       <NarasumberImage
         name="B. Bawono Kristiaji, S.E., M.S.E., M.Sc., IBT., ADIT."
         position="Partner of Fiscal Research & Advisory at DDTC"
-        href=""
+        href="https://www.linkedin.com/in/b-bawono-kristiaji-b08797112/"
         src="../narasumber/B.Bawono.png"
       />
       <NarasumberImage
         name="Dr. Jamaludin Iskak, M.Si., Ak., CA., CPA., CPI., ASEAN, CPA."
         position="Managing Partner Jamaludin, Ardi, Sukimto & Rekan (JAS) Public Accountant Firm - Member of Auditrust International"
-        href=""
+        href="https://id.linkedin.com/in/dr-jamaludin-iskak-cpi-ca-cpa-asean-cpa-877060116"
         src="../narasumber/Dr.Jamaludin.png"
       />
     </NarasumberContainer>
@@ -63,30 +65,34 @@ import NarasumberImage from "../components/Image/NarasumberImage.astro";
       <NarasumberImage
         name="Dr. Anies Lastiati, S.E.Ak., MHRM., M.Ed.St., CA."
         position="Dosen Program Studi Akuntansi Universitas Trilogi"
-        href=""
+        href="https://scholar.google.co.id/citations?user=31jdVAUAAAAJ&hl=en"
         src="../moderator/Dr.Anies.png"
       />
       <NarasumberImage
         name="Dr. Nurul Aisyah Rachmawati, S.E., M.S.Ak."
         position="Dosen Program Studi Akuntansi Universitas Trilogi"
-        href=""
+        href="https://scholar.google.co.id/citations?user=b_MqeFQAAAAJ&hl=en"
         src="../moderator/Dr.Nurul.png"
       />
     </NarasumberContainer>
   </section>
-  <DateContainer title="Tanggal Penting">
-    <Date
-    subtitle="Panel Session 1"
+  <DateCardContainer title="Tanggal Penting">
+    <DateCard>
+      <Date
+        subtitle="Panel Session 1"
         date="Rabu, 01 Februari 2023"
         hour="08:00 - 12:00 WIB"
-        />
-        <Date
-        subtitle="Panel Session 2"
-        date="Kamis, 02 Februari 2023"
-        hour="13:00 - 17:00 WIB"
-        />
-      </DateContainer>
-      <aside class="bg-image-ncafa">
+      />
+    </DateCard>
+    <DateCard>
+      <Date
+      subtitle="Panel Session 2"
+      date="Kamis, 02 Februari 2023"
+      hour="13:00 - 17:00 WIB"
+      />
+    </DateCard>
+  </DateCardContainer>
+  <aside class="bg-image-ncafa">
     <ButtonContainer title="Pendaftaran">
       <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
     </ButtonContainer>

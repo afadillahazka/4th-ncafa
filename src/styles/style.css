@@ -23,9 +23,8 @@
 
 .top-gradient {
     background: linear-gradient(180deg, #ffffff, #fdecd3, rgba(255, 255, 255, 1));
-    height: 80%;
+    min-height: 80vh;
     margin: 0;
-    
 }
 
 .bottom-gradient {

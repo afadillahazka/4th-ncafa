@@ -1,0 +1,28 @@
+---
+import Date from "./Date.astro";
+---
+<section class="container-fluid bg-ncafa pb-2 mb-4 pt-4 pb-4">
+    <div class="d-flex flex-column text-center mb-4">
+        <h1 class="text-center fs-4 fw-bold text-white text-uppercase">tanggal pelaksanaan</h1>
+        <div class="d-flex flex-row flex-wrap justify-content-center gap-2">
+            <div class="shadow-lg card p-2" style="width: 20rem; height: 10vh">
+                <div class="d-flex flex-column justify-content-center align-content-center m-auto">
+                    <Date 
+                        subtitle="Session 1"
+                        date="Rabu, 01 Februari 2023"
+                        hour=""
+                    />
+                </div>
+            </div>
+            <div class="shadow-lg card p-2" style="width: 20rem; height: 10vh">
+                <div class="d-flex flex-column justify-content-center align-content-center m-auto">
+                    <Date 
+                        subtitle="Session 2"
+                        date="Kamis, 02 Februari 2023"
+                        hour=""
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

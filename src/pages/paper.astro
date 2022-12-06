@@ -4,6 +4,8 @@ import Jumbotron from "../components/Jumbotron.astro";
 import DateContainer from "../components/Date/DateContainer.astro";
 import Date from "../components/Date/Date.astro";
 import Date2 from "../components/Date/Date2.astro";
+import DateCardContainer from "../components/Date/DateCardContainer.astro";
+import DateCard from "../components/Date/DateCard.astro";
 import ButtonContainer from "../components/Button/ButtonContainer.astro";
 import Button from "../components/Button/Button.astro";
 import ContactContainer from "../components/ContactOne/ContactContainer.astro";
@@ -17,7 +19,35 @@ import Benefit from "../components/Benefit.astro";
       Call for Paper dan Seminar (16 SKP)
     </h1>
     <Benefit />
-    <DateContainer title="Tanggal Penting">
+    <DateCardContainer title="Tanggal Penting">
+      <DateCard>
+      <Date2 subtitle="Batas Pengiriman" date="Kamis, 22 Desember 2022" />
+      </DateCard>
+      <DateCard>
+      <Date2 subtitle="Pengumuman Diterima" date="Sabtu, 22 Januari 2023" />
+      </DateCard>
+      <DateCard>
+        <Date2
+        subtitle="Batas Registrasi & Pembayaran"
+        date="Sabtu, 28 Januari 2023"
+      />
+      </DateCard>
+      <DateCard>
+        <Date
+          subtitle="Panel Session 1"
+          date="Rabu, 01 Februari 2023"
+          hour="08:00 - 12:00 WIB"
+        />
+      </DateCard>
+      <DateCard>
+        <Date
+        subtitle="Panel Session 2"
+        date="Kamis, 02 Februari 2023"
+        hour="13:00 - 17:00 WIB"
+        />
+      </DateCard>
+    </DateCardContainer>
+    <!-- <DateContainer title="Tanggal Penting">
       <Date2 subtitle="Batas Pengiriman" date="Kamis, 22 Desember 2022" />
       <Date2 subtitle="Pengumuman Diterima" date="Sabtu, 22 Januari 2023" />
       <Date2
@@ -34,7 +64,7 @@ import Benefit from "../components/Benefit.astro";
         date="Kamis, 02 Februari 2023"
         hour="09:00 - 12:00 WIB"
       />
-    </DateContainer>
+    </DateContainer> -->
   </section>
   <aside class="bg-image-ncafa">
   <ButtonContainer title="Template">
