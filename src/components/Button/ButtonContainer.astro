@@ -1,13 +1,15 @@
 ---
 export interface Props {
-    title: string
+    title: string,
+    text: string,
 }
 
-const {title} = Astro.props
+const {title, text} = Astro.props
 ---
 <section class="container-md pt-2 pb-4 bg-ncafa2 rounded-4">
   <h1 class="text-center fs-4 fw-bold text-uppercase">{title}</h1>
   <div class="d-grid gap-1 col-auto col-auto col-lg-4 mx-auto">
     <slot />
+    <p class="text-center text-danger fw-bold">{text}</p>
   </div>
 </section>
