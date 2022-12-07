@@ -21,9 +21,11 @@
     background: conic-gradient(from 90deg at 125% 20%, #f7a224, rgba(255, 255, 255, 1), rgba(255,255,255,1))
 } */
 
-.top-gradient {
-    background: linear-gradient(180deg, #ffffff, #fdecd3, rgba(255, 255, 255, 1));
+.min-height {
     min-height: 80vh;
+}
+.top-gradient {
+    background: linear-gradient(180deg, #ffffff, #2e46963e, rgba(255, 255, 255, 1));
     margin: 0;
 }
 

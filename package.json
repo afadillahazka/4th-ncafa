@@ -16,6 +16,7 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "astro": "^1.6.10",
+    "mdb-ui-kit": "^6.0.1",
     "mdbootstrap": "^4.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
