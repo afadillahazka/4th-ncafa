@@ -12,12 +12,17 @@ import ImageContainer from "../components/Image/ImageContainer.astro";
 import LargeImage from "../components/Image/LargeImage.astro";
 import MediumImage from "../components/Image/MediumImage.astro";
 import SmallImage from "../components/Image/SmallImage.astro";
+import VideoContainer from "../components/Home/VideoContainer.astro";
+import Video from "../components/Home/Video.astro";
 ---
 
 <Layout title="Beranda">
   <Jumbotron />
   <section class="top-gradient">
     <Paragraph />
+    <VideoContainer title="Teaser">
+      <Video />
+    </VideoContainer>
   </section>
   <DateCardContainer title="Tanggal pelaksanaan">
     <DateCard>

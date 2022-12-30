@@ -1,0 +1,18 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section
+  class="container-fluid container-md pt-2 pb-2 bg-ncafa2 rounded-4"
+>
+  <h1 class="fs-4 text-center text-uppercase fw-bold mt-2">{title}</h1>
+  <div
+    class="d-flex justify-content-center align-content-center row row-cols-sm-2 row-cols-auto gap-1 gap-sm-0"
+  >
+    <slot />
+  </div>
+</section>
