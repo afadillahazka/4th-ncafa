@@ -1,5 +1,5 @@
 ---
-import Layout from "../layout/Layout.astro";
+import LayoutEn from "../layout/LayoutEn.astro";
 import DateContainer from "../components/Date/DateContainer.astro";
 import Date from "../components/Date/Date.astro";
 import ButtonContainer from "../components/Button/ButtonContainer.astro";
@@ -10,9 +10,11 @@ import NarasumberContainer from "../components/Image/NarasumberContainer.astro";
 import NarasumberImage from "../components/Image/NarasumberImage.astro";
 import DateCardContainer from "../components/Date/DateCardContainer.astro";
 import DateCard from "../components/Date/DateCard.astro";
+import Container from "../components/Container.astro";
+import TableEn from "../components/TableEn.astro";
 ---
 
-<Layout title="Seminar">
+<LayoutEn title="Seminar">
   <section class="top-gradient">
     <h1 class="text-center fw-bold text-black pt-4">Seminar (7 SKP)</h1>
     <!-- <NarasumberContainer title="Opening Speech">
@@ -43,11 +45,11 @@ import DateCard from "../components/Date/DateCard.astro";
         href="https://jateng.bpk.go.id/pimpinan-perwakilan/"
       />
     </NarasumberContainer>
-    <NarasumberContainer title="Narasumber">
+    <NarasumberContainer title="Speaker">
       <NarasumberImage
         name="Prof. Dr. Sylvia Veronica Siregar, S.E., Ak., CA., CSRS., CSRA."
-        position="Guru Besar Departemen Akuntansi Fakultas Ekonomi & Bisnis Universitas Indonesia"
-        href="https://www.linkedin.com/in/sylvia-veronica-siregar-3598948a/"
+        position="Professor of the Department of Accounting, Faculty of Economics & Business, University of Indonesia"
+        href="https://www.linkedin.c../sylvia-veronica-siregar-3598948a/"
         src="../narasumber/Prof.Dr.Sylvia.png"
       />
       <NarasumberImage
@@ -58,8 +60,8 @@ import DateCard from "../components/Date/DateCard.astro";
       />
       <NarasumberImage
         name="Dr. Sigid Eko Pramono, S.E.Ak., MIBA., CA."
-        position="Inisiator Pedoman Akuntansi Pesantren - Senior Economist Bank Indonesia 2016-2021"
-        href="https://id.linkedin.com/in/sigid-eko-pramono-a749a262"
+        position="Initiator of Islamic Boarding School Accounting Guidelines - Senior Economist Bank of Indonesia 2016-2021"
+        href="https://id.linkedin.c../sigid-eko-pramono-a749a262"
         src="../narasumber/Dr.Sigid.png"
       />
       <NarasumberImage
@@ -71,60 +73,68 @@ import DateCard from "../components/Date/DateCard.astro";
       <NarasumberImage
         name="B. Bawono Kristiaji, S.E., M.S.E., M.Sc., IBT., ADIT."
         position="Partner of Fiscal Research & Advisory at DDTC"
-        href="https://www.linkedin.com/in/b-bawono-kristiaji-b08797112/"
+        href="https://www.linkedin.c../b-bawono-kristiaji-b08797112/"
         src="../narasumber/B.Bawono.png"
       />
       <NarasumberImage
         name="Donny Hamdani, S.E., Ak."
-        position="Direktur Keuangan PT Penjaminan Infrastruktur Indonesia (Persero)"
-        href="https://id.linkedin.com/in/donny-hamdani-67ba7632"
+        position="Director of Finance PT Penjaminan Infrastruktur Indonesia (Persero)"
+        href="https://id.linkedin.c../donny-hamdani-67ba7632"
         src="../narasumber/Donny.png"
       />
       <NarasumberImage
         name="Dr. Jamaludin Iskak, M.Si., Ak., CA., CPA., CPI., ASEAN, CPA."
-        position="Managing Partner Jamaludin, Ardi, Sukimto & Rekan (JAS) Public Accountant Firm - Member of Auditrust International"
-        href="https://id.linkedin.com/in/dr-jamaludin-iskak-cpi-ca-cpa-asean-cpa-877060116"
+        position="Managing Partner Jamaludin, Ardi, Sukimto & Partners (JAS) Public Accountant Firm - Member of Auditrust International"
+        href="https://id.linkedin.c../dr-jamaludin-iskak-cpi-ca-cpa-asean-cpa-877060116"
         src="../narasumber/Dr.Jamaludin.png"
+      />
+      <NarasumberImage
+        name="Prof. Dr. der. pol. Hamzah Ritchi, CA."
+        position="Profesor in AIS and Digital Innovation, Faculty of Economics and Business, Padjadjaran University "
+        href="https://id.linkedin.c../hamzahritchi"
+        src="../narasumber/Prof.Ritchi.png"
       />
       
     </NarasumberContainer>
     <NarasumberContainer title="Moderator">
       <NarasumberImage
         name="Dr. Nurul Aisyah Rachmawati, S.E., M.S.Ak."
-        position="Dosen Program Studi Akuntansi Universitas Trilogi"
+        position="Lecturer in the Trilogi University Accounting Study Program"
         href="https://scholar.google.co.id/citations?user=b_MqeFQAAAAJ&hl=en"
         src="../moderator/Dr.Nurul.png"
       />
       <NarasumberImage
         name="Dr. Anies Lastiati, S.E.Ak., MHRM., M.Ed.St., CA."
-        position="Wakil Rektor Bid. Pembelajaran dan Kemahasiswaan & Dosen Program Studi Akuntansi Universitas Trilogi"
+        position="Deputy Chancellor for Learning and Student Affairs & Lecturer in the Trilogi University Accounting Study Program"
         href="https://scholar.google.co.id/citations?user=31jdVAUAAAAJ&hl=en"
         src="../moderator/Dr.Anies.png"
       />
     </NarasumberContainer>
   </section>
-  <DateCardContainer title="Tanggal Penting">
+  <DateCardContainer title="Important Date">
     <DateCard>
       <Date
         subtitle="Panel Session 1"
-        date="Rabu, 01 Februari 2023"
-        hour="08:00 - 12:00 WIB"
+        date="Wednesday, 01 February 2023"
+        hour="08:00 - 12:00 UTC+7"
       />
     </DateCard>
     <DateCard>
       <Date
       subtitle="Panel Session 2"
-      date="Kamis, 02 Februari 2023"
-      hour="13:00 - 17:00 WIB"
+      date="Thursday, 02 February 2023"
+      hour="13:00 - 17:00 UTC+7"
       />
     </DateCard>
   </DateCardContainer>
   <aside class="bg-image-ncafa">
-    <ButtonContainer title="Pendaftaran" text="">
-      <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
+    <Container title="Price">
+      <TableEn />
+    </Container>
+    <ButtonContainer title="Registration" text="">
+      <Button text="Click here" href="https://bit.ly/4thNCAFA_Registration" />
     </ButtonContainer>
-
-    <ContactContainer title="Hubungi Kami">
+    <ContactContainer title="Contact Us">
       <Contact
         subtitle="WhatsApp"
         href="https://wa.me/6281288425931"
@@ -139,4 +149,4 @@ import DateCard from "../components/Date/DateCard.astro";
       />
     </ContactContainer>
   </aside>
-</Layout>
+</LayoutEn>

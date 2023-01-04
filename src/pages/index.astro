@@ -1,7 +1,7 @@
 ---
-import Layout from "../layout/Layout.astro";
+import LayoutEn from "../layout/LayoutEn.astro";
 import Jumbotron from "../components/Jumbotron.astro";
-import Paragraph from "../components/Home/Paragraph.astro";
+import ParagraphEn from "../components/Home/ParagraphEn.astro";
 import DateCardContainer from "../components/Date/DateCardContainer.astro";
 import DateCard from "../components/Date/DateCard.astro";
 import Date from "../components/Date/Date.astro";
@@ -16,20 +16,20 @@ import VideoContainer from "../components/Home/VideoContainer.astro";
 import Video from "../components/Home/Video.astro";
 ---
 
-<Layout title="Beranda">
+<LayoutEn title="Home">
   <Jumbotron />
   <section class="top-gradient">
-    <Paragraph />
+    <ParagraphEn />
     <VideoContainer title="Teaser">
       <Video />
     </VideoContainer>
   </section>
-  <DateCardContainer title="Tanggal pelaksanaan">
+  <DateCardContainer title="event date">
     <DateCard>
-      <Date subtitle="Session 1" date="Rabu, 01 Februari 2023" hour="" />
+      <Date subtitle="Session 1" date="Wednesday, 01 February 2023" hour="" />
     </DateCard>
     <DateCard>
-      <Date subtitle="Session 2" date="Kamis, 02 Februari 2023" hour="" />
+      <Date subtitle="Session 2" date="Thursday, 02 February 2023" hour="" />
     </DateCard>
   </DateCardContainer>
   <aside class="bg-image-ncafa">
@@ -49,13 +49,13 @@ import Video from "../components/Home/Video.astro";
     </ImageContainer>
     <ButtonContainer title="Poster" text="">
       <Button
-        text="Lihat Poster"
+        text="See Poster"
         href="https://drive.google.com/file/d/1HHwfWWIHoySeUygg28SmKXHevpyAytlR/view"
       />
       <Button
-        text="Unduh Poster"
+        text="Download Poster"
         href="https://drive.google.com/uc?export=download&id=1HHwfWWIHoySeUygg28SmKXHevpyAytlR"
       />
     </ButtonContainer>
   </aside>
-</Layout>
+</LayoutEn>
