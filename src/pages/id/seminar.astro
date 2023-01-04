@@ -10,6 +10,8 @@ import NarasumberContainer from "../../components/Image/NarasumberContainer.astr
 import NarasumberImage from "../../components/Image/NarasumberImage.astro";
 import DateCardContainer from "../../components/Date/DateCardContainer.astro";
 import DateCard from "../../components/Date/DateCard.astro";
+import Container from "../../components/Container.astro";
+import Table from "../../components/Table.astro";
 ---
 
 <Layout title="Seminar">
@@ -86,6 +88,12 @@ import DateCard from "../../components/Date/DateCard.astro";
         href="https://id.linkedin.com/in/dr-jamaludin-iskak-cpi-ca-cpa-asean-cpa-877060116"
         src="../narasumber/Dr.Jamaludin.png"
       />
+      <NarasumberImage
+        name="Prof. Dr. der. pol. Hamzah Ritchi, CA."
+        position="Profesor in AIS and Digital Innovation, Fakultas Ekonomi dan Bisnis Universitas Padjadjaran "
+        href="https://id.linkedin.com/in/hamzahritchi"
+        src="../narasumber/Prof.Ritchi.png"
+      />
       
     </NarasumberContainer>
     <NarasumberContainer title="Moderator">
@@ -120,6 +128,9 @@ import DateCard from "../../components/Date/DateCard.astro";
     </DateCard>
   </DateCardContainer>
   <aside class="bg-image-ncafa">
+    <Container title="Biaya Investasi">
+      <Table />
+    </Container>
     <ButtonContainer title="Pendaftaran" text="">
       <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
     </ButtonContainer>
