@@ -1,0 +1,29 @@
+---
+import Layout from "../layout/Layout.astro";
+import CoHostContainer from "../components/Image/CoHostContainer.astro";
+import CoHostImage from "../components/Image/CoHostImage.astro";
+---
+
+<Layout title="Co-Host">
+  <section class="top-gradient min-height">
+    <h1 class="text-center fw-bold text-black pt-4">Co-Host</h1>
+    <CoHostContainer>
+      <CoHostImage
+        href="https://www.ukdw.ac.id/" 
+        src="../cohost/dutawacana.png"
+        alt="Universitas Kristen Daya Wacana"
+      />
+      <CoHostImage 
+        href="https://www.ubaya.ac.id/"
+        src="../cohost/ubaya.png"
+        alt="Universitas Surabaya"
+      />
+      <CoHostImage 
+        href="https://tazkia.ac.id/"
+        src="../cohost/tazkia.png"
+        alt="Institut Agama Islam Tazkia"
+      />
+    </CoHostContainer>
+
+  </section>
+</Layout>

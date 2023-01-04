@@ -1,0 +1,96 @@
+---
+import Layout from "../layout/Layout.astro";
+import Jumbotron from "../components/Jumbotron.astro";
+import DateContainer from "../components/Date/DateContainer.astro";
+import Date from "../components/Date/Date.astro";
+import Date2 from "../components/Date/Date2.astro";
+import DateCardContainer from "../components/Date/DateCardContainer.astro";
+import DateCard from "../components/Date/DateCard.astro";
+import ButtonContainer from "../components/Button/ButtonContainer.astro";
+import Button from "../components/Button/Button.astro";
+import ContactContainer from "../components/ContactOne/ContactContainer.astro";
+import Contact from "../components/ContactOne/Contact.astro";
+import Benefit from "../components/Benefit.astro";
+import Container from "../components/Container.astro";
+import Table from "../components/Table.astro";
+---
+
+<Layout title="Paper">
+  <section class="top-gradient">
+    <h1 class="text-center fw-bold text-black pt-4 pb-2">
+      Call for Paper dan Seminar (16 SKP)
+    </h1>
+    <Benefit />
+  </section>
+  <Container title="Biaya Investasi">
+    <Table />
+  </Container>
+  <DateCardContainer title="Tanggal Penting">
+    <DateCard>
+      <div>
+        <p class="fs-6 m-0 fw-bold lh-sm text-danger">DIPERPANJANG!</p>
+        <p class="fs-6 m-0 mb-1 fw-bold lh-sm">Batas Pengiriman</p>
+        <p class="fs-6 m-0 lh-sm">Selasa, 17 Januari 2023</p>
+        <p class="fs-6 m-0 lh-sm">23:59 WIB</p>
+      </div>
+    </DateCard>
+    <DateCard>
+      <Date2 subtitle="Pengumuman Diterima" date="Sabtu, 22 Januari 2023" />
+    </DateCard>
+    <DateCard>
+      <Date2
+        subtitle="Batas Registrasi & Pembayaran"
+        date="Sabtu, 28 Januari 2023"
+      />
+    </DateCard>
+    <DateCard>
+      <Date
+        subtitle="Parallel Session 1"
+        date="Rabu, 01 Februari 2023"
+        hour="08:00 - 12:00 WIB"
+      />
+    </DateCard>
+    <DateCard>
+      <Date
+        subtitle="Parallel Session 2"
+        date="Kamis, 02 Februari 2023"
+        hour="13:00 - 17:00 WIB"
+      />
+    </DateCard>
+  </DateCardContainer>
+  <aside class="bg-image-ncafa">
+    <ButtonContainer title="Template" text="">
+      <Button
+        text="Unduh Template Abstrak"
+        href="https://drive.google.com/uc?export=download&id=1K46fyvhRiPo2j4D_qfO_5ennl_UyRP4V"
+      />
+      <Button
+        text="Unduh Template Full Paper"
+        href="https://drive.google.com/uc?export=download&id=190w8fb95Z2Gah0Umrzb4skBW3VPlkwtz"
+      />
+    </ButtonContainer>
+    <ButtonContainer title="Paper Submission" text="">
+      <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_SubmitPaper" />
+    </ButtonContainer>
+    <ButtonContainer
+      title="Registrasi*"
+      text="*) dilakukan setelah pengumuman Paper diterima"
+    >
+      <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
+    </ButtonContainer>
+    <ContactContainer title="Hubungi Kami">
+      <Contact
+        subtitle="WhatsApp"
+        href="https://wa.me/6281770002243"
+        contact="0817 7000 2243 "
+        name="(Alda)"
+      />
+      <Contact
+        subtitle="Email"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa.paper@gmail.com"
+        contact="fourthncafa.paper@gmail.com "
+        name=""
+      />
+    </ContactContainer>
+  </aside>
+</Layout>
