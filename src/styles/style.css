@@ -23,6 +23,7 @@
 .top-gradient {
     background: linear-gradient(180deg, #ffffff, #2e46963e, rgba(255, 255, 255, 1));
     margin: 0;
+    min-height: 70vh;
 }
 
 .bottom-gradient {
@@ -49,4 +50,11 @@
     -o-background-size: cover;
     background-size: cover;
     height: 70%;
+}
+
+.borderless {
+    border-top: hidden!important;
+    border-bottom: hidden!important;
+    border-right: hidden!important;
+    border-left: hidden!important;
 }

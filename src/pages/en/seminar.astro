@@ -1,0 +1,142 @@
+---
+import LayoutEn from "../../layout/LayoutEn.astro";
+import DateContainer from "../../components/Date/DateContainer.astro";
+import Date from "../../components/Date/Date.astro";
+import ButtonContainer from "../../components/Button/ButtonContainer.astro";
+import Button from "../../components/Button/Button.astro";
+import ContactContainer from "../../components/ContactOne/ContactContainer.astro";
+import Contact from "../../components/ContactOne/Contact.astro";
+import NarasumberContainer from "../../components/Image/NarasumberContainer.astro";
+import NarasumberImage from "../../components/Image/NarasumberImage.astro";
+import DateCardContainer from "../../components/Date/DateCardContainer.astro";
+import DateCard from "../../components/Date/DateCard.astro";
+---
+
+<LayoutEn title="Seminar">
+  <section class="top-gradient">
+    <h1 class="text-center fw-bold text-black pt-4">Seminar (7 SKP)</h1>
+    <!-- <NarasumberContainer title="Opening Speech">
+      <NarasumberImage
+        name="Prof. Dr. Pramono Hari Adi, M.S."
+        position="Rektor Universitas Trilogi"
+        src="../narasumber/Dr.Hery.png"
+        href="https://jateng.bpk.go.id/pimpinan-perwakilan/"
+      />
+      <NarasumberImage
+        name="Mohamad Mahsun, S.E., M.Si., Ak., CA., CPA., CFrA., CertIPSAS., Ph.D."
+        position="Ketua Association of Public Sector Accounting Educators (APSAE)"
+        src="../narasumber/Dr.Hery.png"
+        href=""
+      />
+      <NarasumberImage
+        name="Prof. Dian Agustia, M.Si., SE. Ak., CA., CMA."
+        position="Ketua Kompartemen Akuntan Pendidik Ikatan Akuntan Indonesia (IAI)"
+        src="../narasumber/Dr.Hery.png"
+        href=""
+      />
+    </NarasumberContainer> -->
+    <NarasumberContainer title="Keynote Speech">
+      <NarasumberImage
+        name="Dr. Hery Subowo S.E., MPM., Ak., CA, CPA, CSFA., CIA., Ak., CFrA., CFE."
+        position="President ACFE Indonesia Chapter periode 2022-2024"
+        src="../narasumber/Dr.Hery.png"
+        href="https://jateng.bpk.go.id/pimpinan-perwakilan/"
+      />
+    </NarasumberContainer>
+    <NarasumberContainer title="Narasumber">
+      <NarasumberImage
+        name="Prof. Dr. Sylvia Veronica Siregar, S.E., Ak., CA., CSRS., CSRA."
+        position="Professor of the Department of Accounting, Faculty of Economics & Business, University of Indonesia"
+        href="https://www.linkedin.com/in/sylvia-veronica-siregar-3598948a/"
+        src="../narasumber/Prof.Dr.Sylvia.png"
+      />
+      <NarasumberImage
+        name="Oluwatoyin Muse Johnson Popoola, JP, Ph.D., MBA., PGDAF., HDipl., RPA., Member INSOL International., AM(M)., CFA., FCTI., FCA."
+        position="International Lecturer (Senior) Tunku Puteri Intan Safinaz School of Accountancy (TISSA-UUM) College of Business, Universiti Utara Malaysia"
+        href="http://repo.uum.edu.my/profile/popoola"
+        src="../narasumber/Oluwatoyin.png"
+      />
+      <NarasumberImage
+        name="Dr. Sigid Eko Pramono, S.E.Ak., MIBA., CA."
+        position="Initiator of Islamic Boarding School Accounting Guidelines - Senior Economist Bank of Indonesia 2016-2021"
+        href="https://id.linkedin.com/in/sigid-eko-pramono-a749a262"
+        src="../narasumber/Dr.Sigid.png"
+      />
+      <NarasumberImage
+        name="Zubir Azhar, Ph.D., FCPA., CA., ACPA."
+        position="Chairperson (Accounting) - Senior Lecturer, School of Management, Universiti Sains Malaysia"
+        href="https://mia.org.my/governance/about-the-council/dr-zubir-azhar/"
+        src="../narasumber/ZubirAzhar.png"
+      />
+      <NarasumberImage
+        name="B. Bawono Kristiaji, S.E., M.S.E., M.Sc., IBT., ADIT."
+        position="Partner of Fiscal Research & Advisory at DDTC"
+        href="https://www.linkedin.com/in/b-bawono-kristiaji-b08797112/"
+        src="../narasumber/B.Bawono.png"
+      />
+      <NarasumberImage
+        name="Donny Hamdani, S.E., Ak."
+        position="Director of Finance PT Penjaminan Infrastruktur Indonesia (Persero)"
+        href="https://id.linkedin.com/in/donny-hamdani-67ba7632"
+        src="../narasumber/Donny.png"
+      />
+      <NarasumberImage
+        name="Dr. Jamaludin Iskak, M.Si., Ak., CA., CPA., CPI., ASEAN, CPA."
+        position="Managing Partner Jamaludin, Ardi, Sukimto & Rekan (JAS) Public Accountant Firm - Member of Auditrust International"
+        href="https://id.linkedin.com/in/dr-jamaludin-iskak-cpi-ca-cpa-asean-cpa-877060116"
+        src="../narasumber/Dr.Jamaludin.png"
+      />
+      
+    </NarasumberContainer>
+    <NarasumberContainer title="Moderator">
+      <NarasumberImage
+        name="Dr. Nurul Aisyah Rachmawati, S.E., M.S.Ak."
+        position="Lecturer in the Trilogi University Accounting Study Program"
+        href="https://scholar.google.co.id/citations?user=b_MqeFQAAAAJ&hl=en"
+        src="../moderator/Dr.Nurul.png"
+      />
+      <NarasumberImage
+        name="Dr. Anies Lastiati, S.E.Ak., MHRM., M.Ed.St., CA."
+        position="Deputy Chancellor for Learning and Student Affairs & Lecturer in the Trilogi University Accounting Study Program"
+        href="https://scholar.google.co.id/citations?user=31jdVAUAAAAJ&hl=en"
+        src="../moderator/Dr.Anies.png"
+      />
+    </NarasumberContainer>
+  </section>
+  <DateCardContainer title="Important Date">
+    <DateCard>
+      <Date
+        subtitle="Panel Session 1"
+        date="Wednesday, 01 February 2023"
+        hour="08:00 - 12:00 UTC+7"
+      />
+    </DateCard>
+    <DateCard>
+      <Date
+      subtitle="Panel Session 2"
+      date="Thursday, 02 February 2023"
+      hour="13:00 - 17:00 UTC+7"
+      />
+    </DateCard>
+  </DateCardContainer>
+  <aside class="bg-image-ncafa">
+    <ButtonContainer title="Registration" text="">
+      <Button text="Klik di sini" href="https://bit.ly/4thNCAFA_Registration" />
+    </ButtonContainer>
+
+    <ContactContainer title="Contact Us">
+      <Contact
+        subtitle="WhatsApp"
+        href="https://wa.me/6281288425931"
+        contact="0812 8842 5931 "
+        name="(Zakiah)"
+      />
+      <Contact
+        subtitle="Email"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=fourthncafa@gmail.com"
+        contact="fourthncafa@gmail.com "
+        name=""
+      />
+    </ContactContainer>
+  </aside>
+</LayoutEn>
