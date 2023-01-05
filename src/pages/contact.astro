@@ -1,6 +1,14 @@
 ---
 import LayoutEn from "../layout/LayoutEn.astro";
 import ContactContainer from "../components/ContactOne/ContactContainer.astro";
+
+export function getStaticPaths() {
+  return [
+    {params: {path: 'id/contact'}}
+  ]
+}
+
+const { path } = Astro.params
 ---
 
 <LayoutEn title="Contact Us">
