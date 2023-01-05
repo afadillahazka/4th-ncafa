@@ -3,9 +3,10 @@ export interface Props {
   src: string;
   name: string;
   href: string;
+  index: string;
 }
 
-const { src, name, href } = Astro.props;
+const { src, name, href, index } = Astro.props;
 ---
 
 <div class="col mt-3 mb-3">
@@ -13,6 +14,7 @@ const { src, name, href } = Astro.props;
     <img class="img-fluid" src={src} alt="" />
   </div>
   <div class="row justify-content-center text-center ms-2 me-2 fs-6">
-    <a href={href} class="text-decoration-underline text-black" target="_blank">{name}</a>
+    <a href={href} class="text-decoration-underline fw-semibold text-black" target="_blank">{name}</a>
+    <p class="text-black">{index}</p>
   </div>
 </div>
