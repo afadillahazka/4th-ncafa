@@ -5,6 +5,8 @@
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/afadillahazka/4th-ncafa?color=F7A224">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/afadillahazka/4th-ncafa?color=F7A224">
+  
+  <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/490e2c60-eeab-47d2-8b2c-d8b74b3a68cb/deploy-status?">
 </p>
 
 ## About ##
