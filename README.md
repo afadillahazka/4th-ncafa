@@ -1,3 +1,28 @@
-# 4<sup>th</sup> NCAFA Trilogi 2022
+<h1 align="center">1<sup>st</sup> Intl. & 4<sup>th</sup> Natl. Conference on Accounting and Fraud Auditing</h1>
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/afadillahazka/4th-ncafa?color=F7A224">
 
-National Conference on Accounting & Fraud Auditing (NCAFA) merupakan sebuah konferensi tingkat nasional di bidang akuntansi dan audit yang memiliki rangkaian kegiatan Call for Paper dan Seminar. Adapun tujuan dari acara ini adalah untuk mendukung Tri Dharma perguruan tinggi, khususnya di bidang penelitian dimana NCAFA menjadi wadah bagi akademisi, praktisi dan mahasiswa se-Indonesia untuk mempresentasikan hasil riset terbaik dalam bidang akuntansi. NCAFA juga menjadi agenda rutin Program Studi Akuntansi, Universitas Trilogi sejak tahun 2019. Konferensi ini merupakan bentuk kontribusi dari Program Studi Akuntansi, Universitas Trilogi dalam perkembangan ilmu akuntansi di Indonesia. NCAFA merupakan hasil inisiasi kerja sama antara Universitas Trilogi dengan Association of Certified Fraud Examiners (ACFE) Indonesia Chapter dan Association of Public Sector Accounting Educator (APSAE). Dalam perjalanannya penyelenggaraan NCAFA kemudian berkembang dengan bekerja samanya NCAFA dengan beberapa Jurnal Terakreditasi SINTA, Aliansi Pengelola Jurnal Berintegritas Indonesia (ALJEBI), serta Universitas Negeri maupun Swasta Indonesia. Seiring dengan perkembangan tersebut, antusiasme peserta dari tahun ke tahun juga kian meningkat.
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/afadillahazka/4th-ncafa?color=F7A224">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/afadillahazka/4th-ncafa?color=F7A224">
+  
+  <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/490e2c60-eeab-47d2-8b2c-d8b74b3a68cb/deploy-status?">
+</p>
+
+## About ##
+1st International and 4th National Conference on Accounting & Fraud Auditing (NCAFA) is an international level conference in the field of accounting and auditing which has a series of Call for Papers and Seminar activities.
+
+## Technologies ##
+
+The following tools were used in this project:
+
+- [Astro](https://astro.build/)
+- [Node.js](https://nodejs.org/en/)
+- [Bootstrap](https://getbootstrap.com/)
+
+## Links ##
+- [Main](https://www.ncafatrilogi.id/) -- Source: /pages/
+- [Linktree](https://www.ncafatrilogi.id/links/) -- File Source: /pages/links.astro
+- [Event Registry](https://www.ncafatrilogi.id/eventregistry/) -- File Source: /pages/eventregistry
+- [Paper Submission](https://www.ncafatrilogi.id/papersubmission/) -- File Source: /pages/papersubmission
+- [Paper Template](https://www.ncafatrilogi.id/papertemplate/) -- File Source: /pages/papertemplate
