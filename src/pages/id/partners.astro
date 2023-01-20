@@ -1,7 +1,10 @@
 ---
 import ImageContainer from "../../components/Image/ImageContainer.astro";
+import ImageContainer2 from "../../components/Image/ImageContainer2.astro";
+import ImageContainer3 from "../../components/Image/ImageContainer3.astro";
 import MediaPartnerContainer from "../../components/Image/MediaPartnerContainer.astro";
 import Layout from "../../layout/Layout.astro";
+import ExtraLargeImage from "../../components/Image/ExtraLargeImage.astro";
 import LargeImage from "../../components/Image/LargeImage.astro";
 import MediumImage from "../../components/Image/MediumImage.astro";
 import SmallImage from "../../components/Image/SmallImage.astro";
@@ -12,20 +15,22 @@ import MediaPartner from "../../components/Image/MediaPartner.astro";
 <Layout title="Partners">
   <section class="top-gradient">
     <h1 class="text-center fw-bold text-black pt-4">Sponsors & Media Partners</h1>
-    <ImageContainer title="platinum sponsor">
+    <ImageContainer2 title="platinum sponsor">
+      <ExtraLargeImage 
+        src="../sponsors/bankindonesia2.png"
+      />
+    </ImageContainer2>
+    <ImageContainer3>
       <LargeImage 
-        src="../../sponsors/angkasapura2.png"
+        src="../sponsors/angkasapura2.png"
       />
       <LargeImage 
-        src="../../sponsors/indosatooredoo.png"
+        src="../sponsors/indosatooredoo.png"
       />
       <LargeImage 
-        src="../../sponsors/ptpii.png"
+        src="../sponsors/ptpii.png"
       />
-      <LargeImage 
-        src="../sponsors/bankindonesia.png"
-      />
-    </ImageContainer>
+    </ImageContainer3>
     <ImageContainer title="silver sponsor">
       <SmallImage src="../../sponsors/klinikaku2.png"/>
       <SmallImage src="../sponsors/kapsriyadi.png"/>
