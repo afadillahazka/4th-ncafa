@@ -1,0 +1,29 @@
+---
+export interface Props {
+    src: string;
+    alt: string;
+}
+
+const { src, alt } = Astro.props
+---
+<div class="col">
+    <div class="d-flex justify-content-center" >
+        <img
+            src={ src }
+            alt= { alt }
+            width="70%"
+            height="70%"
+            class="lazy"
+            data-bs-toggle="tooltip" data-bs-placement="top"
+            title={alt} 
+        />
+    </div>
+</div>
+
+
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>

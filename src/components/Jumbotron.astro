@@ -1,3 +1,51 @@
-<section>
-    <img src="../jumbotron/Website3-4-01.webp" alt="Jumbotron" class="img-fluid">
-</section>
+---
+export interface Props {
+    src: string;
+    alt: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<div class="jumbotron-container mb-xl-4">
+    <img class="jumbotron-img" src={src} alt={alt} />
+</div>
+
+<style>
+    .jumbotron-container {
+        position: relative;
+        text-align: center;
+        background-color: gainsboro;
+
+    }
+
+    .jumbotron-container img {
+        filter: blur(0);
+        transition: filter 0.5s ease-out;
+        width: 100%;
+    }
+
+    .jumbotron-container.blur img {
+        filter: blur(5px);
+    }
+</style>
+
+<script>
+    // select the image element
+    const img = document.querySelector(".jumbotron-img");
+
+    // set initial blur and scale values
+    let blurValue = 0;
+
+    // listen for the scroll event
+    window.addEventListener("scroll", () => {
+        // get the current scroll position
+        const scrollPos = window.scrollY;
+
+        // calculate the new blur and scale values
+        blurValue = scrollPos / 50;
+
+        // apply the new CSS styles to the image
+        img.style.filter = `blur(${blurValue}px)`;
+    });
+</script>

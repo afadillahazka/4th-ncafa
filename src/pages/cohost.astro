@@ -1,15 +1,66 @@
 ---
-import LayoutEn from "../layout/LayoutEn.astro";
-import CoHostContainer from "../components/Image/CoHostContainer.astro";
-import CoHost from "../components/CoHost/CoHost.astro";
+import AlbumPhotos from '../components/AlbumPhotos.astro';
+import Heading2 from '../components/Heading2.astro';
+import AlbumContainerMedium from '../layouts/Album/AlbumContainer-Medium.astro';
+import AlbumContainer from '../layouts/Album/AlbumContainer.astro';
+import Container from '../layouts/Container.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<LayoutEn title="Co-Host">
-  <section class="top-gradient min-height">
-    <h1 class="text-center fw-bold text-black pt-4">Co-Host</h1>
-    <CoHostContainer>
-      <CoHost />
-    </CoHostContainer>
+<Layout title="Co-Host">
+	<main>
+		<Container>
+            <AlbumContainer>
+                <Heading2 text="Co-Host"/>
+                <AlbumContainerMedium>
+                    <AlbumPhotos 
+						src="/cohost/dutawacana.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/esaunggul.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ipwija.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/pancasila.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/tazkia.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/trisakti.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/uai.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ubaya.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ubhara.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/ubl.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    <AlbumPhotos 
+						src="/cohost/untar.png"
+						alt="KAP Sriyadi, Elly, Sugeng, dan Rekan"
+					/>
+                    
+                </AlbumContainerMedium>
+            </AlbumContainer>
+		</Container>
 
-  </section>
-</LayoutEn>
+	</main>
+</Layout>

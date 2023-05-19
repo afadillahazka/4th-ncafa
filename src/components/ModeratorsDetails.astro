@@ -1,0 +1,17 @@
+---
+export interface Props {
+  src: string;
+  name: string;
+  description: string
+  alt: string
+}
+
+const {src, name, description, alt} = Astro.props
+---
+
+<div class="feature col">
+    <img src={src} width="250px" height="250px" class="img-fluid" alt={alt}>
+    <h3 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">{name}
+    </h3>
+    <p class="lead">{description}</p>
+  </div>
